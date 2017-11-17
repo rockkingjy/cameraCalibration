@@ -1,0 +1,9 @@
+/Debug/
+/Release/
+/build/
+*.prefs
+.project
+.cproject
+*.*~
+!.gitignore
+
