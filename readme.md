@@ -1,7 +1,8 @@
-- Calibration procedures:
-Print out the CHESSBOARD.png by original size.
+# Calibration procedures:
 
-- Run in terminal
+- Print out the CHESSBOARD.png by original size.
+
+- Run in terminal:
 
 $mkdir build
 
@@ -21,15 +22,15 @@ $./camera_calibration ../in_VID5.xml
 
 - Save the build/out_camera_data.xml file for use, it is the calibration parameters file.
 
-- Parameter Settings:
-1. You can change the resolution of camera from /camera_calibration.cpp by the parameter: m_width and m_height.
+# Parameter Settings:
+- You can change the resolution of camera from /camera_calibration.cpp by the parameter: m_width and m_height.
 
-2. You can also print out the ASYMMETRIC_CIRCLES_GRID.png file for calibration. You have to change the following settings:
+- You can also print out the ASYMMETRIC_CIRCLES_GRID.png file for calibration. You have to change the following settings:
 
-a. /in_VID5.xml: <BoardSize_Width>4</BoardSize_Width><BoardSize_Height>11</BoardSize_Height>
+1. /in_VID5.xml: <BoardSize_Width>4</BoardSize_Width><BoardSize_Height>11</BoardSize_Height>
 
-b. /in_VID5.xml: <Calibrate_Pattern>"ASYMMETRIC_CIRCLES_GRID"</Calibrate_Pattern>
+2. /in_VID5.xml: <Calibrate_Pattern>"ASYMMETRIC_CIRCLES_GRID"</Calibrate_Pattern>
 
-3. To switch to a different the camera: 
+- To switch to a different the camera: 
 
 /in_VID5.xml <Input>"0"</Input>: change the camera ID number.
