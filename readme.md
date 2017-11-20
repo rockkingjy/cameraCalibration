@@ -4,15 +4,13 @@
 
 - Run in terminal:
 
+```sh
 $mkdir build
-
 $cd build/
-
 $cmake ..
-
 $make
-
 $./camera_calibration ../in_VID5.xml
+```
 
 - Show the chessboard before the camera until it recognize it.
 
@@ -27,10 +25,10 @@ $./camera_calibration ../in_VID5.xml
 
 - You can also print out the ASYMMETRIC_CIRCLES_GRID.png file for calibration. You have to change the following settings:
 
-1. /in_VID5.xml: <BoardSize_Width>4</BoardSize_Width><BoardSize_Height>11</BoardSize_Height>
+    1. /in_VID5.xml: <BoardSize_Width>4</BoardSize_Width><BoardSize_Height>11</BoardSize_Height>
 
-2. /in_VID5.xml: <Calibrate_Pattern>"ASYMMETRIC_CIRCLES_GRID"</Calibrate_Pattern>
+    2. /in_VID5.xml: <Calibrate_Pattern>"ASYMMETRIC_CIRCLES_GRID"</Calibrate_Pattern>
 
 - To switch to a different the camera: 
 
-/in_VID5.xml <Input>"0"</Input>: change the camera ID number.
+    /in_VID5.xml <Input>"0"</Input>: change the camera ID number.
